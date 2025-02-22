@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="">
+    <title>Kriwil Cafe Jimbaran</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="logo" href="">KRIWIL CAFE</a>
+        <div class="nav-link">
+            <a href="#hero" class="anchor">Home</a>
+            <a href="#event" class="anchor">Location</a>
+            <a href="#explore" class="anchor">ROAST</a>
+            <a href="#tour" class="anchor">Signatures</a>
+            <a href="#contact" class="btn-red">Contact</a>
+        </div>
+        <a class="menu-btn anchor"><i class="fa-solid fa-mug-hot"></i></a>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <h1>KRIWIL CAFE</h1>
+            <div class="line-short"></div>
+            <h2>The <span class="highlighted">Best Coffee</span> you can get, in Bali.</h2>
+            <a href="" class="btn-red">Learn More</a>
+        </div>
+    </header>
+
+    <section class="event" id="event">
+        <div class="event-title">
+            <h2 class="title">OUR LOCATION</h2>
+            <div class="line-short"></div>
+        </div>
+        <div class="event-row">
+            <div class="event-col">
+                <img src="img/img1 (2).jpg" alt="">
+                <h4 class="title">Jimbaran</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nisi cupiditate beatae molestias
+                    reiciendis dolorum.</p>
+                <a href="" class="btn-red">Maps</a>
+            </div>
+            <div class="event-col">
+                <img src="img/img2.jpg" alt="">
+                <h4 class="title">Tabanan</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nisi cupiditate beatae molestias
+                    reiciendis dolorum.</p>
+                <a href="" class="btn-red">Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h2>WE ROAST THE BEST COFFEE.</h2>
+            <div class="line-short"></div>
+            <div class="explore-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi corporis amet doloremque ea natus
+                    repudiandae
+                    nihil ducimus laboriosam accusamus, officiis sapiente culpa est debitis aperiam possimus, voluptate
+                    ut.
+                    Cupiditate, inventore!</p>
+                <a href="" class="btn-red">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours" id="tour">
+        <div class="tours-text">
+            <h2 class="title">OUR SIGNATURES.</h2>
+            <div class="line-short"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates sunt sed recusandae adipisci
+                laboriosam ad, praesentium accusantium nesciunt aliquid quidem maiores temporibus placeat hic!</p>
+            <a href="" class="btn-red">Learn More</a>
+        </div>
+        <div class="tours-img">
+            <img src="img/coffee1.jpg" alt="">
+            <img src="img/coffee2.jpg" alt="">
+            <img src="img/coffee3.jpg" alt="">
+            <img src="img/coffee4.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="footer" id="contact">
+        <p>123 Main St, New York, NY</p>
+        <p>Copyright © Perceval Incorporated 2023, All Rights Reserved, New York City</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLink = document.querySelector('.nav-link');
+
+        menuBtn.addEventListener('click', () => {
+            navLink.classList.toggle('mobile-menu');
+        });
+
+        navLink.addEventListener('click', (event) => {
+            if (event.target.closest('.anchor')) {
+                navLink.classList.remove('mobile-menu');
+            }
+        });
+    </script>
+</body>
+
+</html>
